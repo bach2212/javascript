@@ -1,0 +1,35 @@
+# All Questions are for Ubuntu 18.04
+
+1. What are the commands to update your packages. Give an example.
+
+#####
+2. When you list the content of a directory you see something like this.
+
+drwxr-xr-x 6 root     root      4096 Feb 13 10:38 ./
+drwxr-xr-x 4 root     root      4096 May  9  2019 ../
+-rw-r--r-- 1 root     root     10701 May  6  2019 index.html
+drwxr-xr-x 7 medexo www-data  4096 Feb 13 10:45 medexo/
+
+2.1 What does "rwxr-xr-x" mean?
+
+2.2 What does "medexo www-data" mean?
+
+#####
+3. Which command do you use for changing file permission? Give an example.
+
+#####
+4. Which command do you use for changing user and group owner of a file? Give an example.
+
+#####
+5. What is this config for?
+<VirtualHost 127.0.0.1:80>
+    ServerName test
+		ServerAlias www.test
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html/BewerberTest
+    <Directory /var/www/html/BewerberTest>
+			AllowOverride All
+    </Directory>
+    ErrorLog /var/log/apache2/test_error.log
+    CustomLog /var/log/apache2/test_access.log combined
+</VirtualHost>
